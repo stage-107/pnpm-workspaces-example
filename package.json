@@ -6,10 +6,12 @@
   "author": "DavidWells",
   "license": "MIT",
   "main": "index.js",
-  "workspaces": [
-    "src/app",
-    "src/packages/**"
-  ],
+  "workspaces": {
+    "packages": [
+      "src/app",
+      "src/packages/*"
+    ]
+  },
   "engines": {
     "node": ">16.0.0",
     "pnpm": ">=6"
